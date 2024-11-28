@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Flower</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f8ff;
+    }
+    .cloud-flower {
+        position: relative;
+        width: 200px;
+        height: 200px;
+    }
+    .circle {
+        width: 80px; /* Larger size to ensure proper overlap */
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 0.6; /* Set opacity for the overlap effect */
+    }
+    .circle:nth-child(1) { background-color: #FF6347; top: 10px; left: 60px; }
+    .circle:nth-child(2) { background-color: #ADD8E6; top: 40px; left: 100px; }
+    .circle:nth-child(3) { background-color: #FFD700; top: 90px; left: 100px; }
+    .circle:nth-child(4) { background-color: #98FB98; top: 130px; left: 60px; }
+    .circle:nth-child(5) { background-color: #9370DB; top: 130px; left: 10px; }
+    .circle:nth-child(6) { background-color: #FF69B4; top: 90px; left: -20px; }
+    .circle:nth-child(7) { background-color: #F0E68C; top: 40px; left: -20px; }
+    .circle:nth-child(8) { background-color: #00FFFF; top: 10px; left: 10px; }
+</style>
+</head>
+<body>
+    <div class="cloud-flower">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
